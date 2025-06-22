@@ -1,5 +1,5 @@
-from models import Mensagem
-from datbase import r
+from app.models import Mensagem
+from app.datbase import r
 import json
 import uuid
 
