@@ -1,14 +1,19 @@
-import redis 
-
-
 import redis
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 r = redis.Redis(
-    host='redis-12006.c345.southamerica-east1-1.gce.redns.redis-cloud.com',
+    host= 'redis-12006.c345.samerica-east1-1.gce.redns.redis-cloud.com',
     port=12006,
-    username='usrchatbot',  # ou o que estiver configurado
-    password='Usrchatbot25@',  # substitua pela senha criada
-    ssl=True
+    decode_responses=True,
+    username='default',
+    password='fs78GWzQYCeVVG9jMUYjiqXnPprjJAfb',
 )
+
+
+
+
 
 
